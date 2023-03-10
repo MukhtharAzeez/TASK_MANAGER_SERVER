@@ -19,5 +19,4 @@ export class TaskController {
   updateList(@Body() object: { listId: string; title: string }) {
     return this.taskService.updateList(object.listId, object.title);
   }
-
 }
