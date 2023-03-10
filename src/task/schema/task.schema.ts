@@ -11,5 +11,8 @@ export class Task {
 
   @Prop({ required: true })
   listId: Types.ObjectId;
+
+  @Prop({ required: true })
+  completed: boolean;
 }
 export const TaskSchema = SchemaFactory.createForClass(Task);
